@@ -1,0 +1,156 @@
+body{
+    font-family: 'Roboto', sans-serif; 
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size:18px;
+    margin:0;
+    padding:0;
+    text-align: left;
+}
+
+@font-face{
+font-family: 'Griffy-Regular';
+src:url('../fonts/Griffy-Regular.ttf');
+}
+.content{
+     background-color: darkgrey; 
+     padding: 20px 0;  
+     overflow: hidden;
+}
+.content p, .content h1{
+     padding:0 8%;   
+}
+.artist-group,
+.art-work-group{width: 100%; overflow: hidden;}
+img{
+    width: 100%; 
+}
+.logo{width: 150px;}
+
+.profile-pic{
+    width: 90%; 
+    margin: 0 auto; 
+}
+.Artsandliterature{width: 200px;}
+h1{
+    font-family: 'Griffy-Regular';
+    font-size: 1.75em;/*31.5px*/
+}
+h2{
+font-family: 'Griffy-Regular';
+padding-left: 8%}
+/* em is a unit of measure that is proportional to 
+the base dimension for text */
+nav{ background-color: rgba(255,239,213,0.5);}
+ul.top-nav {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+   
+}
+ul.top-nav li{
+    float:left;
+    margin:0 2.5% 0 5%;
+}
+ul.top-nav li.icon {
+    display: none;
+}
+a:link, a:visited{
+    text-decoration:none;
+}
+a:link{
+     color:blueviolet;   
+}
+a:visited{
+    
+     color:blueviolet;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+      overflow: hidden;
+}
+/*MEDIA QUERIES*/
+
+/*TABLET*/
+@media only screen and (max-width: 768px) {
+    ul.top-nav li{
+        display: none;
+    }
+    ul.top-nav li.icon {
+        display: inline-block;
+        float: right;
+    }
+     ul.top-nav.responsive {
+        position:relative;
+    }
+    ul.top-nav.responsive li.icon{
+        position:absolute;
+        right:0;
+        top:0;
+    }
+    ul.top-nav.responsive li{
+        float:none;
+        display: inline;
+    }
+    ul.top-nav.responsive li a{
+        display: block;
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 420px) {
+    .artist{
+        overflow: hidden;
+    }
+    .artist img{
+        width: 28%;
+        float: left;
+    }
+    .artist p{
+        width: 70%;
+        float: right;
+        padding: 0;
+    }
+    .art-work{
+        margin: 25px 0;
+        overflow: hidden;
+    }
+    .art-work img{
+        width: 48%;
+        float: left;
+    }
+    .art-work p, .art-work h2{
+        width: 48%;
+        float: right;
+        padding: 0;
+    }
+
+}
+/*DESKTOP*/
+@media only screen and (min-width: 769px) {
+   .intro-text{text-align: center; width: 80%; margin: 0 auto; margin-bottom: 30px;}
+   .artist,
+   .art-work{
+        overflow: hidden;
+        width: 47%; float: left;
+    }
+    .artist img{
+        width: 28%;
+        float: left;
+    }
+    .artist p{
+        width: 70%;
+        float: right;
+        padding: 0;
+    }
+    .art-work{
+        margin: 25px 1.25%;
+        overflow: hidden;
+    }
+
+}
+
